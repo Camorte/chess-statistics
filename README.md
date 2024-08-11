@@ -48,3 +48,19 @@ export default tseslint.config({
   },
 })
 ```
+
+## Starting the application
+
+To start the application run these two commands:
+
+```bash
+npm install
+npm run dev
+```
+
+## Known bugs/Future work
+
+Currently these are open issues that have not been resolved:
+
+- Castling is not taken into account when updating the position of the pieces
+- The application does not flag which pieces have been captured

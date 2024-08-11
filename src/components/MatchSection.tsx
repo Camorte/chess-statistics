@@ -242,7 +242,6 @@ const MatchSection = ({ pgn }: { pgn: string }) => {
 
     const CalculateMove = (
         pieces: typeof whitePieces | typeof blackPieces,
-        opposingPieces: typeof whitePieces | typeof blackPieces,
         move: Move
     ) => {
         Object.keys(pieces).forEach((piece) => {
@@ -280,9 +279,9 @@ const MatchSection = ({ pgn }: { pgn: string }) => {
 
         newHistory.forEach((move) => {
             if (move.color === 'w') {
-                CalculateMove(newWhitePieces, newBlackPieces, move);
+                CalculateMove(newWhitePieces, move);
             } else if (move.color === 'b') {
-                CalculateMove(newBlackPieces, newWhitePieces, move);
+                CalculateMove(newBlackPieces, move);
             }
         });
         setWhitePieces(newWhitePieces);
