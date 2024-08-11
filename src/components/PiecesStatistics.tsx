@@ -25,9 +25,9 @@ const PiecesStatistics = ({
                         >
                             <p>
                                 <span className="font-bold">
-                                    {pieceValue.pieceName}, {pieceKey}
+                                    {pieceValue.pieceName}, {pieceKey}-{' '}
+                                    {pieceValue.moves} move(s)
                                 </span>{' '}
-                                - {pieceValue.moves} move(s)
                             </p>
                             <p>
                                 Captured pieces – [
